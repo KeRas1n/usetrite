@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.basicInput {
+  @apply p-3 rounded-2xl text-black text-xl outline-none w-full ;
+}
+
+.search-block{
+  @apply bg-white rounded-3xl border pl-2 pr-2 shadow-lg w-full;
+}
+.iconBtn{
+  @apply bg-[#efefef] rounded-full text-black hover:text-red-500 transition-all duration-300 w-12 h-12 flex items-center justify-center;
+}
+
+.startSearch{
+  @apply bg-white text-black shadow-xl border rounded-lg p-5 mt-[-50px];
+}
+
+.select{
+  @apply pl-7 pr-7 p-2 focus:border-[#e65051] border border-solid rounded-[20px] bg-white shadow-sm w-full transition-all duration-200;
+  border-color: hsl(0, 0%, 80%);
+  outline: none;
+}
+
+.rdrInRange, .rdrStartEdge, .rdrEndEdge, .rdrDateDisplay{
+  color:#e65051 !important;
+}
+.err{
+  @apply p-5 rounded-lg shadow-lg mt-5 text-white bg-[#ff373b] text-xl;
+}
+.rdrDayToday .rdrDayNumber span::after{
+  background: #e65051 !important;
+}
+.primary-btn{
+  @apply p-3 transition-all duration-300 bg-[#e65051] rounded-3xl shadow-lg text-white font-bold hover:bg-red-600;
+}
+.modal{
+@apply z-[1000] h-[100vh] w-[100vw] bg-[rgba(0,0,0,0.4)] fixed top-0 left-0 flex justify-center items-center;
+opacity: 0;
+pointer-events: none;
+transition:.2s;
+}
+.modal.active{
+  pointer-events:all;
+  transform: scale(1);
+  opacity: 1;
+}
+.modal.active > div{
+  transform: scale(1);
+}
+.modal_content{
+  @apply p-16 rounded-lg bg-white w-[50vw];
+  transform: scale(0);
+  transition:.2s;
+}
+.label{
+  @apply text-lg mt-2 mb-2;
+}
+
+.tab{
+  @apply p-2 border border-[#e65051] transition-all font-bold;
+}
+
+.activeTab{
+  @apply p-2 border bg-[#e65051] text-white;
+}
+
+.react-select__option{
+  border-radius: 20px;
+  cursor: pointer;
+  border:1px black;
+}
+
+.hover-img{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  overflow: hidden;
+}
+.hover-img:hover{
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.link:hover{
+  text-decoration: underline;
+  color:#e65051;
+}
+
+
+.header{
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 999;
+  
+}
+
+
+.home-pic{
+  background-image: url("./img/forest.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  @apply p-20 text-white;
+}
+
+.muted-img{
+  filter: brightness(70%)
+}
+
+.wrap {
+  position: relative;
+}      
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1500px;  
+  padding-bottom: 10px;
+}
+.wrapper-product{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;  
+  padding-bottom: 10px;
+}
+
+.red{
+  background-color:#e65051;
+}
+
+html {
+  scroll-behavior: smooth;
+}
