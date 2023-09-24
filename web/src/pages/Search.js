@@ -6,7 +6,7 @@ import Loader from '../components/Loader'
 import { SearchContext } from '../contexts/SearchContext'
 import { Link, useSearchParams } from 'react-router-dom'
 
-export const api_url = "http://localhost:8800/api";
+export const api_url = "https://usetrite-api.vercel.app/api";
 
 export default function Search() {
   

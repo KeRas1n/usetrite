@@ -31,7 +31,7 @@ mongoose.connection.on("disconnected", () => {
 //middlewares
 app.use(cors(
     {
-        origin: ["https://deploy-mern-1whq.vercel.app"],
+        origin: ["https://usetrite-api.vercel.app"],
         methods:["POST", "GET"],
         credentials:true
     }
