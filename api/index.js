@@ -29,7 +29,13 @@ mongoose.connection.on("disconnected", () => {
 
 
 //middlewares
-app.use(cors({origin: true}))
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-1whq.vercel.app"],
+        methods:["POST", "GET"],
+        credentials:true
+    }
+    ))
 app.use(cookieParser())
 app.use(express.json())
 
